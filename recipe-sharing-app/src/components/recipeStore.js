@@ -10,7 +10,13 @@ const useRecipeStore = create((set, get) => ({
       recipes: state.recipes.filter((recipe) => recipe.id !== id),
     }));
   },
-  updateRecipe: "",
+  updateRecipe: (title, description, id) => {
+    set((state) => ({
+      recipes: state.recipes.map((recipe) =>
+        recipe.id === id ? { ...recipe, title, description } : recipe
+      ),
+    }));
+  },
 }));
 
 export default useRecipeStore;

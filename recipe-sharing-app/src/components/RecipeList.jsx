@@ -7,6 +7,7 @@ const RecipeList = () => {
     <div>
       {recipes.map((recipe) => (
         <div key={recipe.id}>
+          {console.log(recipe)}
           <Link to={`/recipe/${recipe.id}`}>Link</Link>
           <h3>{recipe.title}</h3>
           <p>{recipe.description}</p>
