@@ -18,8 +18,8 @@ const EditRecipeForm = () => {
     }
   }, [recipe]);
   const updateRecipe = useRecipeStore((state) => state.updateRecipe);
-  const handleEdit = (e) => {
-    e.preventDefault();
+  const handleEdit = (event) => {
+    event.preventDefault();
     updateRecipe(title, description, Number(recipeId));
     navigate("/");
   };
