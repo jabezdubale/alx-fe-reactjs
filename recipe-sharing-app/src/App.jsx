@@ -3,6 +3,8 @@ import { Router, Routes, Route } from "react-router-dom";
 import RecipeDetails from "./components/RecipeDetails";
 import EditRecipeForm from "./components/EditRecipeForm";
 import RecipeList from "./components/RecipeList";
+import FavoritesList from "./components/FavoritesList";
+import RecommendationsList from "./components/RecommendationsList";
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
         <Route path="/recipe/edit/:recipeId" element={<EditRecipeForm />} />
       </Routes>
       <RecipeList />
+      <FavoritesList />
+      <RecommendationsList />
     </>
   );
 }
