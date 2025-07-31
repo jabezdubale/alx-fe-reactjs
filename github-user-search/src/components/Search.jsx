@@ -55,7 +55,8 @@ const Search = () => {
                   }}
                 />
                 <h3>
-                  {user.name} {<br />}
+                  Name: {user.name} {<br />}
+                  Github username: {user.login} {<br />}
                   <a href={user.html_url}>Github link</a>
                 </h3>
               </div>
