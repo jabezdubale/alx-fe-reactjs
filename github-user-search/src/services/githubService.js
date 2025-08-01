@@ -1,8 +1,7 @@
 import axios from "axios";
 
-export const fetchUserData = async (userName, location, repoNumber) => {
-  //   const url = `https://api.github.com/users/${userName}`;
-  const url = `https://api.github.com/search/users?q=${userName}+location:${location}+repos:>=${repoNumber}`;
+export const fetchUserData = async (userName, location, minRepos) => {
+  const url = `https://api.github.com/search/users?q=${userName}+location:${location}+repos:>=${minRepos}`;
   try {
     const res = await axios.get(url);
     console.log(url);
