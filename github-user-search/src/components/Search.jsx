@@ -10,6 +10,7 @@ const Search = () => {
   const users = useGithubUserStore((state) => state.users);
   const setUsers = useGithubUserStore((state) => state.setUsers);
   const [loading, setLoading] = useState(false);
+  //   &&
 
   const handleSearch = async (event) => {
     event.preventDefault();
@@ -74,7 +75,7 @@ const Search = () => {
         </div>
       </form>
       {loading ? (
-        <div>Loading</div>
+        <div>Loading...</div>
       ) : (
         <div>
           {users.map((user) => {
