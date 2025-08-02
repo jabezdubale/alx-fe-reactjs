@@ -49,7 +49,10 @@ const Search = () => {
           />
         </div>
         <div>
-          <label htmlFor="repoNumber">User # of repo {">"}= </label>
+          <label htmlFor="repoNumber">
+            User # of repo {"("}
+            {">"}={")"}{" "}
+          </label>
           <input
             id="repoNumber"
             type="text"
