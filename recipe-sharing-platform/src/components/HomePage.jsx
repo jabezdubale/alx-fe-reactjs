@@ -9,7 +9,7 @@ const HomePage = () => {
   }, []);
   return (
     <>
-      <ul className="grid grid-cols-2 gap-4 m-3 sm:grid-cols-4 md:grid-cols-8 lg:grid-cols-12">
+      <ul className="grid grid-cols-2 gap-4 m-4 sm:grid-cols-4 md:grid-cols-8 lg:grid-cols-12">
         {datas.map((data) => (
           <li
             key={data.id}
