@@ -9,11 +9,11 @@ const HomePage = () => {
   }, []);
   return (
     <>
-      <ul className="grid grid-cols-2 gap-2 m-2 sm:grid-cols-4 md:grid-cols-8 lg:grid-cols-12">
+      <ul className="grid grid-cols-2 gap-4 m-3 sm:grid-cols-4 md:grid-cols-8 lg:grid-cols-12">
         {datas.map((data) => (
           <li
             key={data.id}
-            className="flex flex-col justify-between bg-gray-100 hover:bg-gray-300 rounded-2xl p-8 col-span-2 md:col-span-3 lg:col-span-4"
+            className="flex flex-col justify-between bg-gray-100 hover:bg-gray-300 rounded-2xl p-8 col-span-2 md:col-span-3 lg:col-span-4 shadow-lg"
           >
             <h2 className="text-2xl mt-3">{data.title}</h2>
             <p className="text-base">{data.summary}</p>
