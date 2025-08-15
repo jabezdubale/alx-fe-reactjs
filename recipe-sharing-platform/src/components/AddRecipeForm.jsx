@@ -1,24 +1,55 @@
+import { useState } from "react";
+
 const AddRecipeForm = () => {
+  const [recName, setRecName] = useState("");
+  const [ingredients, setIngredients] = useState("");
+  const [steps, setSteps] = useState("");
+  const [image, setImage] = useState(null);
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    console.log(recName);
+    setRecName("");
+    console.log(ingredients);
+    setIngredients("");
+    console.log(steps);
+    setSteps("");
+    console.log(image);
+    setImage(null);
+  };
   return (
-    <form className="flex flex-col justify-start items-start w-2/5 mx-auto my-5 py-5 shadow-2xl bg-gray-100 gap-2 p-2 rounded-2xl">
+    <form
+      onSubmit={handleSubmit}
+      className="flex flex-col justify-start items-start w-2/5 mx-auto my-5 py-5 shadow-2xl bg-gray-100 gap-2 p-2 rounded-2xl"
+    >
       <h1 className="text-2xl w-full text-center pb-5">Add new Recipe</h1>
       <input
         type="text"
         placeholder="Recipe Name"
+        value={recName}
+        onChange={(e) => setRecName(e.target.value)}
         required
         className="w-full rounded-lg px-4 py-2"
       />
       <textarea
         placeholder="Include ingredients"
+        value={ingredients}
+        onChange={(e) => setIngredients(e.target.value)}
         required
         className="w-full rounded-lg px-4 py-2"
       ></textarea>
       <textarea
-        placeholder="Recipe Detail"
+        placeholder="Recipe steps"
+        value={steps}
+        onChange={(e) => setSteps(e.target.value)}
         required
         className="w-full rounded-lg px-4 py-2"
       ></textarea>
-      <input type="file" required />
+      <input
+        type="file"
+        required
+        onChange={(e) => setImage(e.target.files[0])}
+      />
       <button
         type="submit"
         className="mx-auto w-48 bg-blue-500 rounded-lg px-4 py-2"
