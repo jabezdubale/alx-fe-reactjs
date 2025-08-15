@@ -5,17 +5,29 @@ const AddRecipeForm = () => {
   const [ingredients, setIngredients] = useState("");
   const [steps, setSteps] = useState("");
   const [image, setImage] = useState(null);
+  const [errors, setErrors] = useState([]);
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log(recName);
+    const validate = [];
+    recName ? console.log(recName) : validate.push("Receipe Name not found");
+    ingredients
+      ? console.log(ingredients)
+      : validate.push("ingredients not found");
+    steps ? console.log(steps) : validate.push("Steps not found");
+    image ? console.log(image) : validate.push("Image not found");
+
+    if (validate.length) {
+      setErrors(validate);
+      validate.map((vals) => alert(vals));
+      return;
+    }
+
     setRecName("");
-    console.log(ingredients);
     setIngredients("");
-    console.log(steps);
     setSteps("");
-    console.log(image);
     setImage(null);
+    console.log(errors);
   };
   return (
     <form
@@ -28,28 +40,21 @@ const AddRecipeForm = () => {
         placeholder="Recipe Name"
         value={recName}
         onChange={(e) => setRecName(e.target.value)}
-        required
         className="w-full rounded-lg px-4 py-2"
       />
       <textarea
         placeholder="Include ingredients"
         value={ingredients}
         onChange={(e) => setIngredients(e.target.value)}
-        required
         className="w-full rounded-lg px-4 py-2"
       ></textarea>
       <textarea
         placeholder="Recipe steps"
         value={steps}
         onChange={(e) => setSteps(e.target.value)}
-        required
         className="w-full rounded-lg px-4 py-2"
       ></textarea>
-      <input
-        type="file"
-        required
-        onChange={(e) => setImage(e.target.files[0])}
-      />
+      <input type="file" onChange={(e) => setImage(e.target.files[0])} />
       <button
         type="submit"
         className="mx-auto w-48 bg-blue-500 rounded-lg px-4 py-2"
