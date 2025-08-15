@@ -3,18 +3,21 @@
     "id": 1,
     "title": "Spaghetti Carbonara",
     "summary": "A classic Italian pasta dish with eggs, cheese, bacon, and black pepper.",
+    "Detail": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, perspiciatis consectetur. Laborum sapiente asperiores inventore error itaque aut est. Non fugiat ab cupiditate unde eos est laborum porro rem minima nobis sequi consectetur, optio ad ea dolorem quos explicabo et veniam totam labore beatae! Fugit quis illo, sequi iusto praesentium officiis esse vero voluptatem iure voluptatum obcaecati quaerat placeat corporis maiores dicta velit sit ea ipsa consectetur vel nostrum. Harum numquam recusandae magnam eligendi quaerat, dignissimos alias ipsam hic esse nam libero doloremque soluta praesentium fugit eos ipsa voluptasdistinctio mollitia. Facilis sunt deserunt voluptates similique non inventore ratione praesentium.",
     "image": "https://www.allrecipes.com/thmb/a_0W8yk_LLCtH-VPqg2uLD9I5Pk=/0x512/filters:no_upscale():max_bytes(150000):strip_icc()/11973-spaghetti-carbonara-ii-DDMFS-4x3-6edea51e421e4457ac0c3269f3be5157.jpg"
   },
   {
     "id": 2,
     "title": "Chicken Tikka Masala",
     "summary": "Chunks of grilled chicken (tikka) cooked in a smooth buttery & creamy tomato based gravy.",
+    "Detail": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, perspiciatis consectetur. Laborum sapiente asperiores inventore error itaque aut est. Non fugiat ab cupiditate unde eos est laborum porro rem minima nobis sequi consectetur, optio ad ea dolorem quos explicabo et veniam totam labore beatae! Fugit quis illo, sequi iusto praesentium officiis esse vero voluptatem iure voluptatum obcaecati quaerat placeat corporis maiores dicta velit sit ea ipsa consectetur vel nostrum. Harum numquam recusandae magnam eligendi quaerat, dignissimos alias ipsam hic esse nam libero doloremque soluta praesentium fugit eos ipsa voluptasdistinctio mollitia. Facilis sunt deserunt voluptates similique non inventore ratione praesentium.",
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUcNTu6mSvUxTmg0k8qX70DsuxwrG-FqC29g&s"
   },
   {
     "id": 3,
     "title": "Chicken Tikka Masala",
     "summary": "Chunks of grilled chicken (tikka) cooked in a smooth buttery & creamy tomato based gravy.",
+    "Detail": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, perspiciatis consectetur. Laborum sapiente asperiores inventore error itaque aut est. Non fugiat ab cupiditate unde eos est laborum porro rem minima nobis sequi consectetur, optio ad ea dolorem quos explicabo et veniam totam labore beatae! Fugit quis illo, sequi iusto praesentium officiis esse vero voluptatem iure voluptatum obcaecati quaerat placeat corporis maiores dicta velit sit ea ipsa consectetur vel nostrum. Harum numquam recusandae magnam eligendi quaerat, dignissimos alias ipsam hic esse nam libero doloremque soluta praesentium fugit eos ipsa voluptasdistinctio mollitia. Facilis sunt deserunt voluptates similique non inventore ratione praesentium.",
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUcNTu6mSvUxTmg0k8qX70DsuxwrG-FqC29g&s"
   }
 ]
