@@ -17,7 +17,7 @@ const RecipeDetail = () => {
   }, [data]);
 
   return (
-    <div className="w-3/5 bg-gray-100 mx-auto p-5 my-5 rounded-3xl">
+    <div className="w-3/5 bg-gray-100 mx-auto p-5 my-5 rounded-3xl shadow-2xl">
       <h2 className="text-4xl mt-3 mx-auto">{data.title}</h2>
       <p className="text-2xl font-light">{ingredients}</p>
       <p className="text-base text-justify mx-3 p-3">{instructions}</p>
