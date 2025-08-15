@@ -32,7 +32,7 @@ const AddRecipeForm = () => {
   return (
     <form
       onSubmit={handleSubmit}
-      className="flex flex-col justify-start items-start w-2/5 mx-auto my-5 py-5 shadow-2xl bg-gray-100 gap-2 p-2 rounded-2xl"
+      className="flex flex-col justify-start items-start w-2/5 sm:w-3/5 md:w-4/5 font-roboto mx-auto my-5 py-5 shadow-2xl bg-gray-100 gap-2 p-2 rounded-2xl"
     >
       <h1 className="text-2xl w-full text-center pb-5">Add new Recipe</h1>
       <input
