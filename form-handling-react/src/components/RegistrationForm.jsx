@@ -4,17 +4,21 @@ const RegistrationForm = () => {
   const [username, setUserName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [errors, setErrors] = useState([]);
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    if (username.length === 0) {
-      alert("User Name can not be empty");
+    if (!username) {
+      setErrors((prev) => [...prev, "User Name can not be empty"]);
+      console.log(errors);
       return;
-    } else if (email.length === 0) {
-      alert("Email can not be empty");
+    } else if (!email) {
+      setErrors((prev) => [...prev, "Email can not be empty"]);
+      console.log(errors);
       return;
-    } else if (password.length === 0) {
-      alert("Password can not be empty");
+    } else if (!password) {
+      setErrors((prev) => [...prev, "Password can not be empty"]);
+      console.log(errors);
       return;
     } else {
       setUserName("");
