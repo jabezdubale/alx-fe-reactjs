@@ -6,7 +6,7 @@ import {
   BrowserRouter,
 } from "react-router-dom";
 import RegistrationForm from "./components/RegistrationForm ";
-import { formikForm } from "./components/formikForm";
+import FormikForm from "./components/FormikForm";
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<RegistrationForm />} />
-          <Route path="/formik" element={<formikForm />} />
+          <Route path="/formik" element={<FormikForm />} />
         </Routes>
       </BrowserRouter>
     </>
