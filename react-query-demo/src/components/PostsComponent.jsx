@@ -1,16 +1,18 @@
 import { useQuery } from "@tanstack/react-query";
 
+const fetchPosts = async () => {
+  const res = await fetch("https://jsonplaceholder.typicode.com/posts/5");
+  return res.json();
+};
+
 const PostsComponent = () => {
-  const { isPending, error, data } = useQuery({
+  const { isLoading, isError, data } = useQuery({
     queryKey: ["repoData"],
-    queryFn: () =>
-      fetch("https://jsonplaceholder.typicode.com/posts/5").then((res) =>
-        res.json()
-      ),
+    queryFn: fetchPosts,
   });
 
-  if (isPending) return "Loading...";
-  if (error) return "An error has occurred: " + error.message;
+  if (isLoading) return "Loading...";
+  if (isError) return "An error has occurred: " + isError.message;
 
   return (
     <div>
