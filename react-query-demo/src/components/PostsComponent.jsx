@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useQuery } from "@tanstack/react-query";
 
-const fetchPost = async (id) => {
+const fetchPosts = async (id) => {
   const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`);
   if (!res.ok) throw new Error("Network error");
   return res.json();
@@ -12,7 +12,7 @@ export default function PostsComponent() {
 
   const { data, error, isError, isLoading, isFetching, refetch } = useQuery({
     queryKey: ["post", postId],
-    queryFn: () => fetchPost(postId),
+    queryFn: () => fetchPosts(postId),
     staleTime: 5 * 1000,
     keepPreviousData: true,
     cacheTime: 60 * 1000,
