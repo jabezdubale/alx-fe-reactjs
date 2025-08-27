@@ -21,7 +21,7 @@ export default function App() {
           }
         />
         <Route path="/users/:userId" element={<UserProfile />} />
-        <Route path="/blogs/:blogId" element={<BlogPost />} />
+        <Route path="/blog/:id" element={<BlogPost />} />
 
         <Route path="*" element={<h1>Not Found</h1>} />
       </Routes>
